@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML, CSS & Git Basics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <img src="./images/photo.png" alt="my_photo" class="avatar" />
+        <div class="header__item">
+          <h1 class="header__name">Dmitrij Gorbunov</h1>
+          <h2 class="header__proffesion">feauter front-end developer</h2>
+        </div>
+      </header>
+      <div class="wrap">
+        <aside class="aside">
+          <section class="aside__contacts">
+            <h2 class="aside__header">Contacts</h2>
+            <ul class="aside__contact-list">
+              <li class="aside__list-item">
+                <h3>Location</h3>
+                <p>Saratov, Russia</p>
+              </li>
+              <li class="aside__list-item">
+                <h3>Phone</h3>
+                <p>+7 (937) 250-47-17</p>
+              </li>
+              <li class="aside__list-item">
+                <h3>Email</h3>
+                <p>dmitrij.g00@mail.ru</p>
+              </li>
+              <li class="aside__list-item">
+                <h3>Telegram</h3>
+                <p>@nutro00</p>
+              </li>
+            </ul>
+          </section>
+          <div class="divider"></div>
+          <section class="aside__about">
+            <h2 class="aside__header">About me</h2>
+            <p>
+              Relatively recently, I started to get involved in web development,
+              and this dragged me into a lot. <br />
+              would like to learn more in this area and hopefully rsschool can
+              help me with this.
+            </p>
+          </section>
+        </aside>
+        <main class="main">
+          <section class="main__education">
+            <h2 class="main__header">Education</h2>
+            <p class="main__item">
+              2018 - 2022 <br />
+              Gagarin State Technical University, Faculty of Information
+              Security.
+            </p>
+          </section>
+          <section class="main__skills">
+            <h2 class="main__header">Skills</h2>
+            <ul>
+              <li class="main__list-item">
+                <p>HTML</p>
+                <img src="./images/ind3.png" alt="ind-pic" />
+              </li>
+              <li class="main__list-item">
+                <p>CSS</p>
+                <img src="./images/ind3.png" alt="ind-pic" />
+              </li>
+              <li class="main__list-item">
+                <p>JavaScript</p>
+                <img src="./images/ind2.png" alt="ind-pic" />
+              </li>
+              <li class="main__list-item">
+                <p>Figma</p>
+                <img src="./images/ind4.png" alt="ind-pic" />
+              </li>
+              <li class="main__list-item">
+                <p>Git</p>
+                <img src="./images/ind3.png" alt="ind-pic" />
+              </li>
+            </ul>
+          </section>
+          <section class="main__experience">
+            <h2 class="main__header">Experience</h2>
+            <p class="main__item">
+              Most of my experience has been taking different courses and doing
+              practical assignments.
+            </p>
+          </section>
+          <section class="main__english">
+            <h2 class="main__header">English</h2>
+            <p class="main__item">A2(Pre-intermediate)</p>
+          </section>
+          <section class="main__code">
+            <h2 class="main__header">Code Example</h2>
+            <pre class="main__item">
+              <code>
+              function digital_root(n) {
+                if (n &lt; 10)
+                  return n;
+              
+                for (var sum = 0, i = 0, n = String(n); i &lt; n.length;
+                i++)
+                  sum += Number(n[i]);
+              
+                return digital_root(sum);
+              }
+             </code>
+            </pre>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div class="footer__item">
+          <a
+            class="footer__git"
+            href="https://github.com/nutro11"
+            target="_blank"
+          >
+            <img src="./images/git.svg" alt="git-icon" width="26" height="26" />
+            <p>Visit My GitHub</p>
+          </a>
+        </div>
+        <div class="footer__item">
+          <p class="footer__name">Dmitrij Gorbunov</p>
+          <p class="footer__year">2021</p>
+        </div>
+        <div class="footer__item">
+          <a href="https://rs.school/js/" target="_blank">
+            <img
+              src="./images/rsschool.svg"
+              alt="rsschool-icon"
+              width="90"
+              height="37"
+            />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
